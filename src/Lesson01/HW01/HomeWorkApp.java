@@ -1,4 +1,4 @@
-package Lesson01;
+package Lesson01.HW01;
 
 public class HomeWorkApp {
     public static void main(String[] args) { // задание1 метод main()
