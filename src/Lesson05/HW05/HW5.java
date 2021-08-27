@@ -15,10 +15,13 @@ public class HW5 {
         emplArray [4] = new Employer ("Branov", "senior dev", "branov@mail.ru", 891734557, 38, 169000);
 
         for (int i=0; i < emplArray.length; i++) { //task5
-            if (emplArray [i].age > 40) {
+            if (emplArray [i].getAge() > 40) {
                 emplArray [i].showInfo();
             }
         }
+        System.out.println(emplArray[1].getEmail());
+        emplArray[1].setSalary(1000000);
+        System.out.println(emplArray[1].getSalary());
 
     }
 }
