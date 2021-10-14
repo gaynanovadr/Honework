@@ -35,13 +35,7 @@ public class AccuweatherModel implements WeatherModel {
 
             Response response = okHttpClient.newCall(request).execute();
             String responseString = response.body().string();
-        //    String weatherText = objectMapper.readTree(responseString).get(0).at("/WeatherText").asText();
-        //    Integer degrees = objectMapper.readTree(responseString).get(0).at("/Temperature/Metric/Value").asInt();
-        //    Weather weather = new Weather(selectedCity, weatherText, degrees);
-        //    System.out.println(weather);
-        //    dataBaseRepository.saveWeather(weather);
-            //TODO: сделать красивый вывод в консоль
-        }
+       }
     }
 
     public void getSavedWeather() {
